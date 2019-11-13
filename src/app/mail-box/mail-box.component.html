@@ -1,0 +1,7 @@
+<mat-card *ngFor="let mail of mails">
+	date: {{mail.Date | date:'medium'}} <br>
+	From: {{mail.From}} <br>
+	To: {{mail.To}} <br>
+	Object: {{mail.Objet}} <br>
+	Content: <br> {{mail.Content}} <br>
+</mat-card>

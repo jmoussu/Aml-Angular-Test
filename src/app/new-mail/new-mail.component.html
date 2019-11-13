@@ -1,0 +1,30 @@
+<div>
+	<div>
+		<br>
+		<form [formGroup]="mailForm" (ngSubmit)="onSubmitForm()">
+			<div class="form-group">
+				<mat-form-field>
+					<input class="form-control" id="From" formControlName="From" matInput placeholder="From">
+				</mat-form-field>
+			</div> <br>
+			<div class="form-group">
+				<mat-form-field>
+					<input class="form-control" id="To" formControlName="To" matInput placeholder="To">
+				</mat-form-field>
+			</div> <br>
+			<div class="form-group">
+				<mat-form-field>
+					<input class="form-control" id="Object" formControlName="Object" matInput placeholder="Object">
+				</mat-form-field>
+			</div> <br>
+			<div class="form-group">
+				<mat-form-field>
+					<textarea class="form-control" id="Content" formControlName="Content" matInput placeholder="Content"></textarea>
+				</mat-form-field>
+			</div> <br>
+			<button mat-button type="submit" [disabled]="mailForm.invalid">Send</button>
+		</form>
+	</div>
+
+
+</div>
